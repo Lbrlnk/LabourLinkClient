@@ -5,14 +5,18 @@ import Home from "./Components/Admin/Home";
 import Registration from "./Pages/User/Registration&Login/Registration";
 import AdminLogin from "./Pages/Admin/Login/AdminLogin";
 import JobPosts from "./Pages/Admin/JobPosts";
-import MunicipalitiesByState from "./Pages/Admin/MunicipalityByState";
+// import MunicipalitiesByState from "./Pages/Admin/MunicipalityByState";
 import Dashboard from "./Pages/Admin/Dashboard";
 import Skills from "./Pages/Admin/Skills";
 import Users from "./Pages/Admin/Users";
 import Municipalities from "./Pages/Admin/Municipalities";
 import { Toaster } from "react-hot-toast";
 
-// React Query Client
+// import AddMunicipality from './Pages/Admin/AddMunicipality';
+import EmployerMainPage from "./Pages/User/Employer/EmployerMainPage";
+import PostJobForm from "./Pages/User/Employer/PostJobPage";
+import LoginPage from "./Pages/User/Registration&Login/UserLogin";
+import ViewPostJob from "./Pages/User/Employer/ViewPostJob";
 const queryClient = new QueryClient();
 
 function App() {
@@ -32,7 +36,14 @@ function App() {
           {/* Authentication & Other Routes */}
           <Route path="/adminLogin" element={<AdminLogin />} />
           <Route path="/registration" element={<Registration />} />
-          <Route path="/municipality-by-state" element={<MunicipalitiesByState />} />
+
+          <Route path="/employer/homepage" element={<EmployerMainPage />} />
+          <Route path="/employePostjob" element={<PostJobForm />} />
+          <Route path="/userlogin" element={<LoginPage />} />
+          <Route path="/api/job/jobpostbyclient" element={<ViewPostJob />} />
+          {/* <Route path="/addMunicipality" element={<AddMunicipality/>} /> */}
+          {/* Route for the Users component */}
+          {/* <Route path="/" element={<Users />} /> */}
         </Routes>
       </Router>
 
