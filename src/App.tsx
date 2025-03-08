@@ -1,4 +1,3 @@
-
 import './App.css';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing react-router-dom
@@ -16,6 +15,8 @@ import ProfileCard from './Pages/User/LandingPage/ProfileCard';
 import Footer from './Pages/User/Footer/Footer';
 import LabourProfile from './Pages/User/LabourProfile/LabourProfile';
 import MyAcount from './Pages/User/MyAcount/MyAcount';
+import EmployeeNotifications from './Pages/User/Notification/EmployeeNotifications';
+import LabourNotifications from './Pages/User/Notification/LabourNotifications';
 const queryClient = new QueryClient();
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
           <Route path='/profilecard' element={<ProfileCard/>}/>
           <Route path='/labourprofile' element={<LabourProfile/>}/>
           <Route path='/myacount' element={< MyAcount/>} />
+          <Route path='/employeenotifications' element={<EmployeeNotifications />}/>
+          <Route path='/labournotifications' element={<LabourNotifications />}/>
 
           <Route path='footer' element={<Footer/>}/>
           {/* <Route path="/addMunicipality" element={<AddMunicipality/>} /> *}
