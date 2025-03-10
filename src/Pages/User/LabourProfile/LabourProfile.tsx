@@ -64,7 +64,7 @@ const LabourProfile: React.FC = () => {
   ];
 
   const handleRegister = () => {
-    navigate("/myacount");
+    navigate("/");
   };
 
   return (
