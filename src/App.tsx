@@ -17,6 +17,13 @@ import EmployerMainPage from "./Pages/User/Employer/EmployerMainPage";
 import PostJobForm from "./Pages/User/Employer/PostJobPage";
 import LoginPage from "./Pages/User/Registration&Login/UserLogin";
 import ViewPostJob from "./Pages/User/Employer/ViewPostJob";
+import Landingpage from './Pages/User/LandingPage/Landingpage';
+import ProfileCard from './Pages/User/LandingPage/ProfileCard';
+import Footer from './Pages/User/Footer/Footer';
+import LabourProfile from './Pages/User/LabourProfile/LabourProfile';
+import MyAcount from './Pages/User/MyAcount/MyAcount';
+import EmployeeNotifications from './Pages/User/Notification/EmployeeNotifications';
+import LabourNotifications from './Pages/User/Notification/LabourNotifications';
 const queryClient = new QueryClient();
 
 function App() {
@@ -44,6 +51,13 @@ function App() {
           {/* <Route path="/addMunicipality" element={<AddMunicipality/>} /> */}
           {/* Route for the Users component */}
           {/* <Route path="/" element={<Users />} /> */}
+          <Route path='/landingpage' element={<Landingpage/>}/>
+          <Route path='/profilecard' element={<ProfileCard/>}/>
+          <Route path='/labourprofile' element={<LabourProfile/>}/>
+          <Route path='/myacount' element={< MyAcount/>} />
+          <Route path='/employeenotifications' element={<EmployeeNotifications />}/>
+          <Route path='/labournotifications' element={<LabourNotifications />}/>
+          <Route path='footer' element={<Footer/>}/>
         </Routes>
       </Router>
 

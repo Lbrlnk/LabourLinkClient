@@ -3,7 +3,7 @@ import Menu from "@mui/joy/Menu";
 import MenuButton from "@mui/joy/MenuButton";
 import MenuItem from "@mui/joy/MenuItem";
 import { User } from "lucide-react";
-const AccounDropdown = () => {
+const AccountDropdown = () => {
   return (
     <Dropdown>
       <MenuButton>
@@ -19,4 +19,4 @@ const AccounDropdown = () => {
   );
 };
 
-export default AccounDropdown;
+export default AccountDropdown;
